@@ -397,6 +397,8 @@ class UpdateDBCommands extends DrushCommands
             foreach ($updates as $number => $update) {
                 if (empty($update['#abort']) && $update['results']['success'] && !empty($update['results']['query'])) {
                     $this->logger()->notice(strip_tags($update['results']['query']));
+                } elseif (!empty($update['#abort']['query'])) {
+                    $this->logger()->error(strip_tags($update['#abort']['query']));
                 }
             }
         }
