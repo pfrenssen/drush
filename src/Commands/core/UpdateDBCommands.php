@@ -186,7 +186,6 @@ class UpdateDBCommands extends DrushCommands
             // types, but for now we'll just print the message.
             catch (\Exception $e) {
                 $ret['#abort'] = ['success' => false, 'query' => $e->getMessage()];
-                $this->logger()->error($e->getMessage());
             }
 
             if ($context['log']) {

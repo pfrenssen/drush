@@ -88,9 +88,9 @@ LOG;
  [notice] Update started: woot_update_8101
  [ok] Update completed: woot_update_8101
  [notice] Update started: woot_update_8102
- [error] This is the exception message thrown in woot_update_8102
  [error] Update failed: woot_update_8102
  [notice] This is the update message from woot_update_8101
+ [error] This is the exception message thrown in woot_update_8102
  [error] Update aborted by: woot_update_8102
  [error] Finished performing updates.
 LOG;
